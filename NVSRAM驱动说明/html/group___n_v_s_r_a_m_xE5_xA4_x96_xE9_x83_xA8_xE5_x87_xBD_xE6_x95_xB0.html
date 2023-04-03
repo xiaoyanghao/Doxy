@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NVRAM 驱动: NVSRAM外部函数</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NVRAM 驱动<span id="projectnumber">&#160;V1.0</span>
+   </div>
+   <div id="projectbrief">CY14B101Q2A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">NVSRAM外部函数<div class="ingroups"><a class="el" href="group___xE8_xAE_xBE_xE5_xA4_x87_xE9_xA9_xB1_xE5_x8A_xA8.html">设备驱动</a> &raquo; <a class="el" href="group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8.html">NVSRAM驱动</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga11b3551328ef6c0a824e9fb8b3550e05"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga11b3551328ef6c0a824e9fb8b3550e05">Nvsram_Set_Bp</a> (uint8_t Level)</td></tr>
+<tr class="memdesc:ga11b3551328ef6c0a824e9fb8b3550e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设置写保护.  <br /></td></tr>
+<tr class="separator:ga11b3551328ef6c0a824e9fb8b3550e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga478c20657faf549d5555aec2c7cc625f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga478c20657faf549d5555aec2c7cc625f">Nvsram_Get_Bp</a> (void)</td></tr>
+<tr class="memdesc:ga478c20657faf549d5555aec2c7cc625f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取写保护块.  <br /></td></tr>
+<tr class="separator:ga478c20657faf549d5555aec2c7cc625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0779711b24d7a13165d32cfbabb4e06"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad0779711b24d7a13165d32cfbabb4e06">Nvsram_Burst_Write_Buff</a> (uint32_t nvsram_addr, uint8_t *w_buf, uint32_t len)</td></tr>
+<tr class="memdesc:gad0779711b24d7a13165d32cfbabb4e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 写内存函数  <br /></td></tr>
+<tr class="separator:gad0779711b24d7a13165d32cfbabb4e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdb13e6b2fe57b78973323441979bdbf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gacdb13e6b2fe57b78973323441979bdbf">Nvsram_Burst_Read_Buff</a> (uint32_t nvsram_addr, uint8_t *r_buf, uint32_t len)</td></tr>
+<tr class="memdesc:gacdb13e6b2fe57b78973323441979bdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 读内存函数  <br /></td></tr>
+<tr class="separator:gacdb13e6b2fe57b78973323441979bdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e9fa9d6d93f85039696c348e3a2873f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga1e9fa9d6d93f85039696c348e3a2873f">Nvsram_Soft_Store</a> (void)</td></tr>
+<tr class="memdesc:ga1e9fa9d6d93f85039696c348e3a2873f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 软件存储  <br /></td></tr>
+<tr class="separator:ga1e9fa9d6d93f85039696c348e3a2873f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa506268095b30eecfee6ee24dda91ec7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gaa506268095b30eecfee6ee24dda91ec7">Nvsram_Soft_Recall</a> (void)</td></tr>
+<tr class="memdesc:gaa506268095b30eecfee6ee24dda91ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 软件加载数据  <br /></td></tr>
+<tr class="separator:gaa506268095b30eecfee6ee24dda91ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5f4be18a5bad723247231d671863c99"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gae5f4be18a5bad723247231d671863c99">Nvsram_Set_SN</a> (uint8_t *sn_buff)</td></tr>
+<tr class="memdesc:gae5f4be18a5bad723247231d671863c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设置序列号  <br /></td></tr>
+<tr class="separator:gae5f4be18a5bad723247231d671863c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5f934ee64d3e26f978ae5484ae83af8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad5f934ee64d3e26f978ae5484ae83af8">Nvsram_Get_SN</a> (uint8_t *sn_buff)</td></tr>
+<tr class="memdesc:gad5f934ee64d3e26f978ae5484ae83af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取序列号  <br /></td></tr>
+<tr class="separator:gad5f934ee64d3e26f978ae5484ae83af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc94c91020765c3995684f266cc91ee3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gadc94c91020765c3995684f266cc91ee3">Nvsram_Init</a> (void)</td></tr>
+<tr class="memdesc:gadc94c91020765c3995684f266cc91ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设备初始化  <br /></td></tr>
+<tr class="separator:gadc94c91020765c3995684f266cc91ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb7d9c1e633494c7fd995f2bb8d00d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gafb7d9c1e633494c7fd995f2bb8d00d14">Nvsram_Get_Struct</a> (<a class="el" href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a> *nvsram_st)</td></tr>
+<tr class="memdesc:gafb7d9c1e633494c7fd995f2bb8d00d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取设备状态  <br /></td></tr>
+<tr class="separator:gafb7d9c1e633494c7fd995f2bb8d00d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga364a61ea29bed180d21a9e86add7b662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga364a61ea29bed180d21a9e86add7b662">Nvsram_Test</a> (void)</td></tr>
+<tr class="memdesc:ga364a61ea29bed180d21a9e86add7b662"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 驱动测试  <br /></td></tr>
+<tr class="separator:ga364a61ea29bed180d21a9e86add7b662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga7996ec6839914827f19889cef3814d8f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga7996ec6839914827f19889cef3814d8f">test_tx</a> [<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>] = {0}</td></tr>
+<tr class="separator:ga7996ec6839914827f19889cef3814d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac164f082c9da49393facb1909ba74c61"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gac164f082c9da49393facb1909ba74c61">test_rx</a> [<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>] = {0}</td></tr>
+<tr class="separator:gac164f082c9da49393facb1909ba74c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">函数说明</h2>
+<a id="gacdb13e6b2fe57b78973323441979bdbf" name="gacdb13e6b2fe57b78973323441979bdbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdb13e6b2fe57b78973323441979bdbf">&#9670;&#160;</a></span>Nvsram_Burst_Read_Buff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Nvsram_Burst_Read_Buff </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nvsram_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>r_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 读内存函数 </p>
+<dl class="section note"><dt>注解</dt><dd>数据进行读操作时,如果地址大于0x1FFFF,地址将自动在0x00000中依次增加读取 </dd>
+<dd>
+缓存区大小为 256Byte, SPI通信速率为 12.5MHZ 读速率为 262.83KByte/S <br  />
+ </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nvsram_addr</td><td>NVSRAM内存地址 0x00000–0x1FFFF </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">r_buf:读缓存区地址</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len:读字节长度</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">读出字节数量</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad0779711b24d7a13165d32cfbabb4e06" name="gad0779711b24d7a13165d32cfbabb4e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0779711b24d7a13165d32cfbabb4e06">&#9670;&#160;</a></span>Nvsram_Burst_Write_Buff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Nvsram_Burst_Write_Buff </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nvsram_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>w_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 写内存函数 </p>
+<dl class="section note"><dt>注解</dt><dd>1) 数据进行突发写操作时，当突发写到达一个受保护的块地址时，它将地址增 </dd>
+<dd>
+量继续到受保护空间，但是不向受保护内存写入任何数据。如果地址增加到 </dd>
+<dd>
+突发写操作带到未受保护的空间，然后恢复写入 </dd>
+<dd>
+2) 数据进行突发写操作时，如果地址大于0x1FFFF，地址将自动在0x00000处依次增加写入 <br  />
+ </dd>
+<dd>
+3) 缓存区大小为 256Byte, SPI通信速率为 12.5MHZ 写速率为 262.83KByte/S <br  />
+ </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nvsram_addr:NVSRAM内存地址</td><td>0x00000–0x1FFFF </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w_buf:写缓存区地址</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len:写入字节长度</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">写入字节数量</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga478c20657faf549d5555aec2c7cc625f" name="ga478c20657faf549d5555aec2c7cc625f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga478c20657faf549d5555aec2c7cc625f">&#9670;&#160;</a></span>Nvsram_Get_Bp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Nvsram_Get_Bp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 获取写保护块. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NVSRAM_BPL0</td><td>0 内存不保护 </td></tr>
+    <tr><td class="paramname">NVSRAM_BPL1</td><td>1/4 内存保护 0x18000–0x1FFFF </td></tr>
+    <tr><td class="paramname">NVSRAM_BPL2</td><td>1/2 内存保护 0x10000–0x1FFFF </td></tr>
+    <tr><td class="paramname">NVSRAM_BPL3</td><td>ALL 内存保护 0x00000–0x1FFFF </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad5f934ee64d3e26f978ae5484ae83af8" name="gad5f934ee64d3e26f978ae5484ae83af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5f934ee64d3e26f978ae5484ae83af8">&#9670;&#160;</a></span>Nvsram_Get_SN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nvsram_Get_SN </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>sn_buff</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 获取序列号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">sn_buff</td><td>序列号缓存区保存地址 该缓存区要大于等于8个字节 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafb7d9c1e633494c7fd995f2bb8d00d14" name="gafb7d9c1e633494c7fd995f2bb8d00d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb7d9c1e633494c7fd995f2bb8d00d14">&#9670;&#160;</a></span>Nvsram_Get_Struct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nvsram_Get_Struct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a> *&#160;</td>
+          <td class="paramname"><em>nvsram_st</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 获取设备状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">nvsram_st</td><td>设备状态结构体地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gadc94c91020765c3995684f266cc91ee3" name="gadc94c91020765c3995684f266cc91ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc94c91020765c3995684f266cc91ee3">&#9670;&#160;</a></span>Nvsram_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Nvsram_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 设备初始化 </p>
+<dl class="section note"><dt>注解</dt><dd>硬件初始化 等待设备就绪,加载ID号,加载序列号写入标志 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NVSRAM_SUCCEED:成功</td><td><br  />
+ </td></tr>
+    <tr><td class="paramname">NVSRAM_PRAM_ERRO:传入参数错误</td><td></td></tr>
+    <tr><td class="paramname">NVSRAM_Busy:设备忙</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga11b3551328ef6c0a824e9fb8b3550e05" name="ga11b3551328ef6c0a824e9fb8b3550e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11b3551328ef6c0a824e9fb8b3550e05">&#9670;&#160;</a></span>Nvsram_Set_Bp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Nvsram_Set_Bp </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>Level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 设置写保护. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Level</td><td>设置写保护等级 <ul>
+<li><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289afd756c9aa0ce536c5c528843607ae5db">NVSRAM_BPL0</a> 0 内存不保护 </li>
+<li><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289ad1ffca258ef5954a512c595974469e62">NVSRAM_BPL1</a> 1/4 内存保护 0x18000–0x1FFFF </li>
+<li><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a38b3296f4f63921b179e88efab58e8e0">NVSRAM_BPL2</a> 1/2 内存保护 0x10000–0x1FFFF </li>
+<li><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a905582ca0f6566822fc53430a8b48a55">NVSRAM_BPL3</a> ALL 内存保护 0x00000–0x1FFFF </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NVSRAM_SUCCEED:成功</td><td><br  />
+ </td></tr>
+    <tr><td class="paramname">NVSRAM_PRAM_ERRO:传入参数错误</td><td></td></tr>
+    <tr><td class="paramname">NVSRAM_Busy:设备忙</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae5f4be18a5bad723247231d671863c99" name="gae5f4be18a5bad723247231d671863c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5f4be18a5bad723247231d671863c99">&#9670;&#160;</a></span>Nvsram_Set_SN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Nvsram_Set_SN </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>sn_buff</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 设置序列号 </p>
+<dl class="section note"><dt>注解</dt><dd>内部有8个字节的序列号空间，但只能被写一次(保存到量子陷阱之后), </dd>
+<dd>
+写一次之后,状态寄存器中SNL bit 为1,并且永远不能擦除该标志位,序列号 </dd>
+<dd>
+永远不能再被更改,由于需要存储功能,将会耗时6ms左右,不建议将此函数放入线程中使用 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sn_buff</td><td>序列号缓存区保存地址 该缓存区要大于等于8个字节 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NVSRAM_SUCCEED:成功</td><td><br  />
+ </td></tr>
+    <tr><td class="paramname">NVSRAM_PRAM_ERRO:传入参数错误</td><td></td></tr>
+    <tr><td class="paramname">NVSRAM_Busy:设备忙</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa506268095b30eecfee6ee24dda91ec7" name="gaa506268095b30eecfee6ee24dda91ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa506268095b30eecfee6ee24dda91ec7">&#9670;&#160;</a></span>Nvsram_Soft_Recall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Nvsram_Soft_Recall </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 软件加载数据 </p>
+<dl class="section note"><dt>注解</dt><dd>将量子陷阱中数据加载到内部SDRAM数据中,由于存储需要一定的时间,如果设备可以上电加载, </dd>
+<dd>
+不建议使用该函数 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NVSRAM_SUCCEED:成功</td><td><br  />
+ </td></tr>
+    <tr><td class="paramname">NVSRAM_PRAM_ERRO:传入参数错误</td><td></td></tr>
+    <tr><td class="paramname">NVSRAM_Busy:设备忙</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1e9fa9d6d93f85039696c348e3a2873f" name="ga1e9fa9d6d93f85039696c348e3a2873f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e9fa9d6d93f85039696c348e3a2873f">&#9670;&#160;</a></span>Nvsram_Soft_Store()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Nvsram_Soft_Store </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 软件存储 </p>
+<dl class="section note"><dt>注解</dt><dd>将内部SDRAM数据存储到量子陷阱中,由于存储需要一定的时间,如果设备可以掉电保存, </dd>
+<dd>
+不建议使用该函数 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NVSRAM_SUCCEED:成功</td><td><br  />
+ </td></tr>
+    <tr><td class="paramname">NVSRAM_PRAM_ERRO:传入参数错误</td><td></td></tr>
+    <tr><td class="paramname">NVSRAM_Busy:设备忙</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga364a61ea29bed180d21a9e86add7b662" name="ga364a61ea29bed180d21a9e86add7b662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga364a61ea29bed180d21a9e86add7b662">&#9670;&#160;</a></span>Nvsram_Test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nvsram_Test </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVSRAM 驱动测试 </p>
+<dl class="section note"><dt>注解</dt><dd>1)设备初始化测试,函数运行时间,设备ID,设备序列号是否写入 </dd>
+<dd>
+2)设备软件保存指令检测 测试运行时间 </dd>
+<dd>
+3)设备软件数据加载指令检测 测试运行时间 </dd>
+<dd>
+4)设备写函数测试（一次写一个缓存区） </dd>
+<dd>
+5)设备读函数测试（一次读一个缓存区） </dd>
+<dd>
+6)设备写函数测试（128K内存）测试写入运行时间 </dd>
+<dd>
+7)设备读函数测试（128K内存）测试写入读出数据的正确性 <br  />
+ </dd>
+<dd>
+8)设备读函数测试（128K内存）测试读出运行时间 </dd>
+<dd>
+9)设备掉电数据保存测试 调试状态将内存中写入数据 0x55 </dd>
+<dd>
+断电重启,设备初始化之后,读出数据，判断数据全为0x55 <br  />
+ </dd>
+<dd>
+10)设备块保护测试 NVSRAM_BPL0 （128K内存）写入0x11 读出数据判断是否一致 </dd>
+<dd>
+NVSRAM_BPL1 （128K内存）写入0x22 读出数据判断是否一致 </dd>
+<dd>
+NVSRAM_BPL2 （128K内存）写入0x33 读出数据判断是否一致 </dd>
+<dd>
+NVSRAM_BPL3 （128K内存）写入0x44 读出数据判断是否一致 </dd>
+<dd>
+解除块保护 （128K内存）写入0x55 读出数据判断是否一致 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="gac164f082c9da49393facb1909ba74c61" name="gac164f082c9da49393facb1909ba74c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac164f082c9da49393facb1909ba74c61">&#9670;&#160;</a></span>test_rx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t test_rx[<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>] = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7996ec6839914827f19889cef3814d8f" name="ga7996ec6839914827f19889cef3814d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7996ec6839914827f19889cef3814d8f">&#9670;&#160;</a></span>test_tx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t test_tx[<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>] = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NVRAM 驱动: E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv_Nvsram.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NVRAM 驱动<span id="projectnumber">&#160;V1.0</span>
+   </div>
+   <div id="projectbrief">CY14B101Q2A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a27cab484d5b469d123b37f06a823028.html">NVSRAM驱动</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">Drv_Nvsram.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>非易失性RAM驱动.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_drv___nvsram_8h_source.html">Drv_Nvsram.h</a>&quot;</code><br />
+<code>#include &quot;Drv_Spi.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga9a6ae053b9f2555afa5e67ca8427070a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F.html#ga9a6ae053b9f2555afa5e67ca8427070a">Nvsram_Delay_Ms</a>(NMS)&#160;&#160;&#160;HAL_Delay(NMS)</td></tr>
+<tr class="memdesc:ga9a6ae053b9f2555afa5e67ca8427070a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 毫秒延时.  <br /></td></tr>
+<tr class="separator:ga9a6ae053b9f2555afa5e67ca8427070a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e8ad2fd2cf956872f15290e35c96e71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F.html#ga2e8ad2fd2cf956872f15290e35c96e71">Nvsram_Get_tick</a>()&#160;&#160;&#160;HAL_GetTick()</td></tr>
+<tr class="memdesc:ga2e8ad2fd2cf956872f15290e35c96e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取系统时间戳.  <br /></td></tr>
+<tr class="separator:ga2e8ad2fd2cf956872f15290e35c96e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7abb2a519cf15059878db72b60e37d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F.html#gae7abb2a519cf15059878db72b60e37d1">Nvsram_Spi_TR</a>(txbuf,  rxbuf,  len)&#160;&#160;&#160;SPI_TransmitReceive(SPI_CH1, txbuf, rxbuf, len)</td></tr>
+<tr class="memdesc:gae7abb2a519cf15059878db72b60e37d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM SPI通信接口  <br /></td></tr>
+<tr class="separator:gae7abb2a519cf15059878db72b60e37d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab37e21f213afd46acaf590ea14f83c4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab37e21f213afd46acaf590ea14f83c4a">NVSRAM_STATUS_RDSR</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:gab37e21f213afd46acaf590ea14f83c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61964adc3e1d5d05780306a76e01b2a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga61964adc3e1d5d05780306a76e01b2a2">NVSRAM_STATUS_FRDSR</a>&#160;&#160;&#160;0x0A</td></tr>
+<tr class="separator:ga61964adc3e1d5d05780306a76e01b2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7669ec1bf815fa8d2fad1d5d2eb62646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga7669ec1bf815fa8d2fad1d5d2eb62646">NVSRAM_STATUS_WRSR</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga7669ec1bf815fa8d2fad1d5d2eb62646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab10d39da767ec1bfbe684a9c372d8402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab10d39da767ec1bfbe684a9c372d8402">NVSRAM_STATUS_WREN</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:gab10d39da767ec1bfbe684a9c372d8402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05c7d7c9fbe6d04a64b8fc0778b411bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga05c7d7c9fbe6d04a64b8fc0778b411bd">NVSRAM_STATUS_WRDI</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga05c7d7c9fbe6d04a64b8fc0778b411bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef82d41e40466c2a728551734cb10b33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gaef82d41e40466c2a728551734cb10b33">NVSRAM_SRAM_READ</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:gaef82d41e40466c2a728551734cb10b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09f514cf02198669be0cc8fe89d287a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga09f514cf02198669be0cc8fe89d287a7">NVSRAM_SRAM_FREAD</a>&#160;&#160;&#160;0x0B</td></tr>
+<tr class="separator:ga09f514cf02198669be0cc8fe89d287a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5246cf5b174995cb50791dae0da8bf37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga5246cf5b174995cb50791dae0da8bf37">NVSRAM_SRAM_WRITE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga5246cf5b174995cb50791dae0da8bf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bb9fa640b271314b44caff51b1f7353"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga5bb9fa640b271314b44caff51b1f7353">NVSRAM_SPEC_NV_STORE</a>&#160;&#160;&#160;0x3C</td></tr>
+<tr class="separator:ga5bb9fa640b271314b44caff51b1f7353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b5d007aa189c4627e3a1dca252e6d90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga6b5d007aa189c4627e3a1dca252e6d90">NVSRAM_SPEC_NV_RECALL</a>&#160;&#160;&#160;0x60</td></tr>
+<tr class="separator:ga6b5d007aa189c4627e3a1dca252e6d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b09d5be51e35e1943da657a91d911a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga0b09d5be51e35e1943da657a91d911a3">NVSRAM_SPEC_NV_ASENB</a>&#160;&#160;&#160;0x59</td></tr>
+<tr class="separator:ga0b09d5be51e35e1943da657a91d911a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6732c14b594f4ce4ec83add9ff9a0d78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga6732c14b594f4ce4ec83add9ff9a0d78">NVSRAM_SPEC_NV_ASDISB</a>&#160;&#160;&#160;0x19</td></tr>
+<tr class="separator:ga6732c14b594f4ce4ec83add9ff9a0d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d39e8e38a2d91b620c8f80d3472417a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga7d39e8e38a2d91b620c8f80d3472417a">NVSRAM_SPEC_SLEEP</a>&#160;&#160;&#160;0xB9</td></tr>
+<tr class="separator:ga7d39e8e38a2d91b620c8f80d3472417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6d25cbfa09f24d876dff1e32f091782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gae6d25cbfa09f24d876dff1e32f091782">NVSRAM_SPEC_WRSN</a>&#160;&#160;&#160;0xC2</td></tr>
+<tr class="separator:gae6d25cbfa09f24d876dff1e32f091782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a16624b594f89a120568ebcda5c9025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga3a16624b594f89a120568ebcda5c9025">NVSRAM_SPEC_RDSN</a>&#160;&#160;&#160;0xC3</td></tr>
+<tr class="separator:ga3a16624b594f89a120568ebcda5c9025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad92055367b5ced9e7ba5cdb66f60336f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gad92055367b5ced9e7ba5cdb66f60336f">NVSRAM_SPEC_FRDSN</a>&#160;&#160;&#160;0xC9</td></tr>
+<tr class="separator:gad92055367b5ced9e7ba5cdb66f60336f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34bb91524899d5af48827dba2513e420"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga34bb91524899d5af48827dba2513e420">NVSRAM_SPEC_RDID</a>&#160;&#160;&#160;0x9F</td></tr>
+<tr class="separator:ga34bb91524899d5af48827dba2513e420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b44384f67da8dafe400a2658e7ae2e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga9b44384f67da8dafe400a2658e7ae2e9">NVSRAM_SPEC_FRDID</a>&#160;&#160;&#160;0x99</td></tr>
+<tr class="separator:ga9b44384f67da8dafe400a2658e7ae2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d240d08be22bd07700973302fd1a913"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga1d240d08be22bd07700973302fd1a913">NVSRAM_STATUS_RDY</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga1d240d08be22bd07700973302fd1a913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga860dadd1fd0af534ffc7566661731510"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga860dadd1fd0af534ffc7566661731510">NVSRAM_STATUS_WEN</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga860dadd1fd0af534ffc7566661731510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52c604b50e3c1b609099580e15810a79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga52c604b50e3c1b609099580e15810a79">NVSRAM_STATUS_BP0</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga52c604b50e3c1b609099580e15810a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07b9a7898d4e42875f4b49543bbb83f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga07b9a7898d4e42875f4b49543bbb83f2">NVSRAM_STATUS_BP1</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:ga07b9a7898d4e42875f4b49543bbb83f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb8cb3c091e4ccbfa74962e05c2c52ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gaeb8cb3c091e4ccbfa74962e05c2c52ad">NVSRAM_STATUS_SNL</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:gaeb8cb3c091e4ccbfa74962e05c2c52ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd2ea583206188504654869a54577720"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gafd2ea583206188504654869a54577720">NVSRAM_STATUS_WPEN</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:gafd2ea583206188504654869a54577720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf902634bd81064e4a107a1d144ebb73f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gaf902634bd81064e4a107a1d144ebb73f">NVSRAM_DEV_ID</a>&#160;&#160;&#160;0x06818820</td></tr>
+<tr class="separator:gaf902634bd81064e4a107a1d144ebb73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93873248e5d02d1d52e8b9f45563e3b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#ga93873248e5d02d1d52e8b9f45563e3b3">NVSRAM_MAX_ADDR</a>&#160;&#160;&#160;0x1FFFF</td></tr>
+<tr class="separator:ga93873248e5d02d1d52e8b9f45563e3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5490d89e2be9f5ec240e9c7a4e4c551"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:gab5490d89e2be9f5ec240e9c7a4e4c551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gaec1cfb244df00836e9b13f76665f36c0"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0.html#gaec1cfb244df00836e9b13f76665f36c0">nvsram_check_id</a> (void)</td></tr>
+<tr class="memdesc:gaec1cfb244df00836e9b13f76665f36c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 检测设备ID  <br /></td></tr>
+<tr class="separator:gaec1cfb244df00836e9b13f76665f36c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf2278f653b8b397d83ab94b89cbb8c0"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0.html#gadf2278f653b8b397d83ab94b89cbb8c0">nvsram_get_ready</a> (void)</td></tr>
+<tr class="memdesc:gadf2278f653b8b397d83ab94b89cbb8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取就绪状态（上电等待）  <br /></td></tr>
+<tr class="separator:gadf2278f653b8b397d83ab94b89cbb8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50c377643f6cfab6c7eb93458d2b24dc"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0.html#ga50c377643f6cfab6c7eb93458d2b24dc">nvsram_get_snw</a> (void)</td></tr>
+<tr class="memdesc:ga50c377643f6cfab6c7eb93458d2b24dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 序列号是否写入(上电检测)  <br /></td></tr>
+<tr class="separator:ga50c377643f6cfab6c7eb93458d2b24dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa54d95910df0242dbd0004d9b6c35aee"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0.html#gaa54d95910df0242dbd0004d9b6c35aee">nvsram_verify_set_wen</a> (void)</td></tr>
+<tr class="memdesc:gaa54d95910df0242dbd0004d9b6c35aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设置写使能  <br /></td></tr>
+<tr class="separator:gaa54d95910df0242dbd0004d9b6c35aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11b3551328ef6c0a824e9fb8b3550e05"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga11b3551328ef6c0a824e9fb8b3550e05">Nvsram_Set_Bp</a> (uint8_t Level)</td></tr>
+<tr class="memdesc:ga11b3551328ef6c0a824e9fb8b3550e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设置写保护.  <br /></td></tr>
+<tr class="separator:ga11b3551328ef6c0a824e9fb8b3550e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga478c20657faf549d5555aec2c7cc625f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga478c20657faf549d5555aec2c7cc625f">Nvsram_Get_Bp</a> (void)</td></tr>
+<tr class="memdesc:ga478c20657faf549d5555aec2c7cc625f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取写保护块.  <br /></td></tr>
+<tr class="separator:ga478c20657faf549d5555aec2c7cc625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0779711b24d7a13165d32cfbabb4e06"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad0779711b24d7a13165d32cfbabb4e06">Nvsram_Burst_Write_Buff</a> (uint32_t nvsram_addr, uint8_t *w_buf, uint32_t len)</td></tr>
+<tr class="memdesc:gad0779711b24d7a13165d32cfbabb4e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 写内存函数  <br /></td></tr>
+<tr class="separator:gad0779711b24d7a13165d32cfbabb4e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdb13e6b2fe57b78973323441979bdbf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gacdb13e6b2fe57b78973323441979bdbf">Nvsram_Burst_Read_Buff</a> (uint32_t nvsram_addr, uint8_t *r_buf, uint32_t len)</td></tr>
+<tr class="memdesc:gacdb13e6b2fe57b78973323441979bdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 读内存函数  <br /></td></tr>
+<tr class="separator:gacdb13e6b2fe57b78973323441979bdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e9fa9d6d93f85039696c348e3a2873f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga1e9fa9d6d93f85039696c348e3a2873f">Nvsram_Soft_Store</a> (void)</td></tr>
+<tr class="memdesc:ga1e9fa9d6d93f85039696c348e3a2873f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 软件存储  <br /></td></tr>
+<tr class="separator:ga1e9fa9d6d93f85039696c348e3a2873f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa506268095b30eecfee6ee24dda91ec7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gaa506268095b30eecfee6ee24dda91ec7">Nvsram_Soft_Recall</a> (void)</td></tr>
+<tr class="memdesc:gaa506268095b30eecfee6ee24dda91ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 软件加载数据  <br /></td></tr>
+<tr class="separator:gaa506268095b30eecfee6ee24dda91ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5f4be18a5bad723247231d671863c99"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gae5f4be18a5bad723247231d671863c99">Nvsram_Set_SN</a> (uint8_t *sn_buff)</td></tr>
+<tr class="memdesc:gae5f4be18a5bad723247231d671863c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设置序列号  <br /></td></tr>
+<tr class="separator:gae5f4be18a5bad723247231d671863c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5f934ee64d3e26f978ae5484ae83af8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad5f934ee64d3e26f978ae5484ae83af8">Nvsram_Get_SN</a> (uint8_t *sn_buff)</td></tr>
+<tr class="memdesc:gad5f934ee64d3e26f978ae5484ae83af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取序列号  <br /></td></tr>
+<tr class="separator:gad5f934ee64d3e26f978ae5484ae83af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc94c91020765c3995684f266cc91ee3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gadc94c91020765c3995684f266cc91ee3">Nvsram_Init</a> (void)</td></tr>
+<tr class="memdesc:gadc94c91020765c3995684f266cc91ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 设备初始化  <br /></td></tr>
+<tr class="separator:gadc94c91020765c3995684f266cc91ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb7d9c1e633494c7fd995f2bb8d00d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gafb7d9c1e633494c7fd995f2bb8d00d14">Nvsram_Get_Struct</a> (<a class="el" href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a> *nvsram_st)</td></tr>
+<tr class="memdesc:gafb7d9c1e633494c7fd995f2bb8d00d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 获取设备状态  <br /></td></tr>
+<tr class="separator:gafb7d9c1e633494c7fd995f2bb8d00d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga364a61ea29bed180d21a9e86add7b662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga364a61ea29bed180d21a9e86add7b662">Nvsram_Test</a> (void)</td></tr>
+<tr class="memdesc:ga364a61ea29bed180d21a9e86add7b662"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVSRAM 驱动测试  <br /></td></tr>
+<tr class="separator:ga364a61ea29bed180d21a9e86add7b662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga7d7c6557472c6baa0dd512293355a612"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8.html#ga7d7c6557472c6baa0dd512293355a612">_nvsram</a> = {0}</td></tr>
+<tr class="separator:ga7d7c6557472c6baa0dd512293355a612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a60ac89198dbc7a76380d9578274787"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8.html#ga4a60ac89198dbc7a76380d9578274787">_nvsram_txbuf</a> [<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>+4] = {0}</td></tr>
+<tr class="separator:ga4a60ac89198dbc7a76380d9578274787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ecfd870fb8057668a378d412a92a36d"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8.html#ga8ecfd870fb8057668a378d412a92a36d">_nvsram_rxbuf</a> [<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>+4] = {0}</td></tr>
+<tr class="separator:ga8ecfd870fb8057668a378d412a92a36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7996ec6839914827f19889cef3814d8f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga7996ec6839914827f19889cef3814d8f">test_tx</a> [<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>] = {0}</td></tr>
+<tr class="separator:ga7996ec6839914827f19889cef3814d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac164f082c9da49393facb1909ba74c61"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gac164f082c9da49393facb1909ba74c61">test_rx</a> [<a class="el" href="group___n_v_s_r_a_m_xE8_xAE_xBE_xE5_xA4_x87_xE5_x8F_x82_xE6_x95_xB0.html#gab5490d89e2be9f5ec240e9c7a4e4c551">NVSRAM_BUF_SIZE</a>] = {0}</td></tr>
+<tr class="separator:gac164f082c9da49393facb1909ba74c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>非易失性RAM驱动. </p>
+<dl class="section author"><dt>作者</dt><dd>YZH </dd></dl>
+<pre class="fragment">  ==============================================================================
+                     ##### 芯片介绍 #####
+  ==============================================================================
+[..]
+   (+) 芯片型号   ： CY14B101Q2A-SXI
+   (+) 内存       ： 128K * 8 bit
+   (+) 地址       ： 0x00000-0x1FFFF
+   (+) 工作电压   ： 3V
+   (+) 工作温度   ：-40~85℃
+   (+) 设备ID     :  0x06818820
+   (+) 数据保存时间（环境温度85℃） ： 20年
+   (+) 通信方式  ： SPI 模式0或模式3
+   (+) 时钟频率  ： 正常读写 最高40MHZ  快读方式最高 104MHZ
+   (+) 写保护    ： 支持 1/4 1/2 1/1 0 内存保护
+   (+) 工作方式  ： 其内部有两个模块组成 SRAM （掉电丢失）和 量子陷阱（掉电保存）
+                   正常读写在SRAM中，掉电的过程中，外部连接电容剩余的电量，将SRAM
+                   中的数据保存到量子陷阱单元，实现掉电数据保护，上电之后，会自动
+                   将量子陷阱单元的数据搬运到SRAM中，实现上电加载，同时也可以利用
+                   软件命令实现数据保存。  </pre><dl class="section attention"><dt>注意</dt><dd><pre>
+         (+)  数据进行突发写操作时，当突发写到达一个受保护的块地址时，它将地址增
+              量继续到受保护空间，但是不向受保护内存写入任何数据。如果地址滚转将
+              突发写操作带到未受保护的空间，然后恢复写入。
+         (+)  数据进行突发写操作或者读操作时，如果地址大于0x1FFFF，地址将自动
+              在0x00000处依次增加写入或者读取；
+         (+)  在进行写内存，写寄存器，或者保存，加载、自动保存使能，自动保存不使
+               能操作之后，写使能将被禁止，同时状态寄存中WEN bit为0，下一次进行写
+               操作时必须将开启写使能。
+         (+)  芯片内部有8个字节的序列号空间，但只能被写一次（保存到量子陷阱之后），
+              写一次之后，状态寄存器中SNL bit 为1，并且永远不能擦除该标志位，序列号
+              永远不能再被更改。
+         (+)  提高设备驱动读写速率有两个方法 ：提高SPI通信速率
+                                               增大NVSRAM_BUF_SIZE缓存区
+    </pre> </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

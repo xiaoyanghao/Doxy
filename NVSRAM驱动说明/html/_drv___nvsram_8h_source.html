@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NVRAM 驱动: E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv_Nvsram.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NVRAM 驱动<span id="projectnumber">&#160;V1.0</span>
+   </div>
+   <div id="projectbrief">CY14B101Q2A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a27cab484d5b469d123b37f06a823028.html">NVSRAM驱动</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Drv_Nvsram.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_drv___nvsram_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _DRV_NVSRAM_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _DRV_NVSRAM_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;stm32h7xx.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;Data_Type.h&quot;</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* Exported types ------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ga355ea421de17e28d214226a54f220289">   35</a></span> <span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>   </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289afd756c9aa0ce536c5c528843607ae5db">   38</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289afd756c9aa0ce536c5c528843607ae5db">NVSRAM_BPL0</a> = 0x00,      </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289ad1ffca258ef5954a512c595974469e62">   39</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289ad1ffca258ef5954a512c595974469e62">NVSRAM_BPL1</a>,             </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a38b3296f4f63921b179e88efab58e8e0">   40</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a38b3296f4f63921b179e88efab58e8e0">NVSRAM_BPL2</a>,             </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a905582ca0f6566822fc53430a8b48a55">   41</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a905582ca0f6566822fc53430a8b48a55">NVSRAM_BPL3</a>,             </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> }<a class="code hl_enumeration" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ga355ea421de17e28d214226a54f220289">NVSRAM_BPL</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gae94e522f2c5235323e0c683077987603">   48</a></span> <span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>   </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603add501e163e5b2b4428e5ca1a1de694ec">   51</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603add501e163e5b2b4428e5ca1a1de694ec">NVSRAM_SUCCEED</a>,          </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603a0dbe38fa460d712b300528141ef0e7c1">   52</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603a0dbe38fa460d712b300528141ef0e7c1">NVSRAM_PRAM_ERRO</a>,        </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603a960f5ec077175cec77b21beec7eec742">   53</a></span>   <a class="code hl_enumvalue" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603a960f5ec077175cec77b21beec7eec742">NVSRAM_Busy</a>,             </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> }<a class="code hl_enumeration" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gae94e522f2c5235323e0c683077987603">NVSRAM_RET</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_nvsram___struct__t.html">   60</a></span> <span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_nvsram___struct__t.html#adc64ccb7538429fe78e3fe0139267370">   62</a></span>  uint8_t <a class="code hl_variable" href="struct_nvsram___struct__t.html#adc64ccb7538429fe78e3fe0139267370">error</a>;                   </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_nvsram___struct__t.html#a071e5007ca753b83d24505a6b6daba5c">   63</a></span>  uint8_t <a class="code hl_variable" href="struct_nvsram___struct__t.html#a071e5007ca753b83d24505a6b6daba5c">enabled</a>;                 </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_nvsram___struct__t.html#abaabdc509cdaba7df9f56c6c76f3ae19">   64</a></span>  uint32_t <a class="code hl_variable" href="struct_nvsram___struct__t.html#abaabdc509cdaba7df9f56c6c76f3ae19">id</a>;                     </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_nvsram___struct__t.html#a2fd84723a16caafaa5ff489c8e7818b6">   65</a></span>  uint8_t <a class="code hl_variable" href="struct_nvsram___struct__t.html#a2fd84723a16caafaa5ff489c8e7818b6">snw</a>;                     </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>} <a class="code hl_struct" href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a>;  </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_xAE_x8F.html#ga093915f0e11fae051243f5e8993fd127">   75</a></span><span class="preprocessor">#define Drv_Nvsram_TSET   </span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> <span class="comment">/* Exported function ------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>uint8_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gadc94c91020765c3995684f266cc91ee3">Nvsram_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>uint8_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga11b3551328ef6c0a824e9fb8b3550e05">Nvsram_Set_Bp</a>(uint8_t Level);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>uint8_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga478c20657faf549d5555aec2c7cc625f">Nvsram_Get_Bp</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>uint32_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad0779711b24d7a13165d32cfbabb4e06">Nvsram_Burst_Write_Buff</a>(uint32_t nvsram_addr, uint8_t *w_buf, uint32_t len);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>uint32_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gacdb13e6b2fe57b78973323441979bdbf">Nvsram_Burst_Read_Buff</a>(uint32_t nvsram_addr, uint8_t *r_buf, uint32_t len);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>uint8_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga1e9fa9d6d93f85039696c348e3a2873f">Nvsram_Soft_Store</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>uint8_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gaa506268095b30eecfee6ee24dda91ec7">Nvsram_Soft_Recall</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>uint8_t <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gae5f4be18a5bad723247231d671863c99">Nvsram_Set_SN</a>(uint8_t *sn_buff);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad5f934ee64d3e26f978ae5484ae83af8">Nvsram_Get_SN</a>(uint8_t *sn_buff);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gafb7d9c1e633494c7fd995f2bb8d00d14">Nvsram_Get_Struct</a>(<a class="code hl_struct" href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a> *nvsram_st);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#ifdef Drv_Nvsram_TSET</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga364a61ea29bed180d21a9e86add7b662">Nvsram_Test</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">/*****************************END OF FILE**************************************/</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_ga11b3551328ef6c0a824e9fb8b3550e05"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga11b3551328ef6c0a824e9fb8b3550e05">Nvsram_Set_Bp</a></div><div class="ttdeci">uint8_t Nvsram_Set_Bp(uint8_t Level)</div><div class="ttdoc">NVSRAM 设置写保护.</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:252</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_ga1e9fa9d6d93f85039696c348e3a2873f"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga1e9fa9d6d93f85039696c348e3a2873f">Nvsram_Soft_Store</a></div><div class="ttdeci">uint8_t Nvsram_Soft_Store(void)</div><div class="ttdoc">NVSRAM 软件存储</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:423</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_ga364a61ea29bed180d21a9e86add7b662"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga364a61ea29bed180d21a9e86add7b662">Nvsram_Test</a></div><div class="ttdeci">void Nvsram_Test(void)</div><div class="ttdoc">NVSRAM 驱动测试</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:596</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_ga478c20657faf549d5555aec2c7cc625f"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#ga478c20657faf549d5555aec2c7cc625f">Nvsram_Get_Bp</a></div><div class="ttdeci">uint8_t Nvsram_Get_Bp(void)</div><div class="ttdoc">NVSRAM 获取写保护块.</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:301</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gaa506268095b30eecfee6ee24dda91ec7"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gaa506268095b30eecfee6ee24dda91ec7">Nvsram_Soft_Recall</a></div><div class="ttdeci">uint8_t Nvsram_Soft_Recall(void)</div><div class="ttdoc">NVSRAM 软件加载数据</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:456</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gacdb13e6b2fe57b78973323441979bdbf"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gacdb13e6b2fe57b78973323441979bdbf">Nvsram_Burst_Read_Buff</a></div><div class="ttdeci">uint32_t Nvsram_Burst_Read_Buff(uint32_t nvsram_addr, uint8_t *r_buf, uint32_t len)</div><div class="ttdoc">NVSRAM 读内存函数</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:383</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gad0779711b24d7a13165d32cfbabb4e06"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad0779711b24d7a13165d32cfbabb4e06">Nvsram_Burst_Write_Buff</a></div><div class="ttdeci">uint32_t Nvsram_Burst_Write_Buff(uint32_t nvsram_addr, uint8_t *w_buf, uint32_t len)</div><div class="ttdoc">NVSRAM 写内存函数</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:339</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gad5f934ee64d3e26f978ae5484ae83af8"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gad5f934ee64d3e26f978ae5484ae83af8">Nvsram_Get_SN</a></div><div class="ttdeci">void Nvsram_Get_SN(uint8_t *sn_buff)</div><div class="ttdoc">NVSRAM 获取序列号</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:526</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gadc94c91020765c3995684f266cc91ee3"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gadc94c91020765c3995684f266cc91ee3">Nvsram_Init</a></div><div class="ttdeci">uint8_t Nvsram_Init(void)</div><div class="ttdoc">NVSRAM 设备初始化</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:542</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gae5f4be18a5bad723247231d671863c99"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gae5f4be18a5bad723247231d671863c99">Nvsram_Set_SN</a></div><div class="ttdeci">uint8_t Nvsram_Set_SN(uint8_t *sn_buff)</div><div class="ttdoc">NVSRAM 设置序列号</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:490</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0_html_gafb7d9c1e633494c7fd995f2bb8d00d14"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE5_x87_xBD_xE6_x95_xB0.html#gafb7d9c1e633494c7fd995f2bb8d00d14">Nvsram_Get_Struct</a></div><div class="ttdeci">void Nvsram_Get_Struct(Nvsram_Struct_t *nvsram_st)</div><div class="ttdoc">NVSRAM 获取设备状态</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.c:570</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_ga355ea421de17e28d214226a54f220289"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ga355ea421de17e28d214226a54f220289">NVSRAM_BPL</a></div><div class="ttdeci">NVSRAM_BPL</div><div class="ttdoc">内存写保护等级</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:36</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_gae94e522f2c5235323e0c683077987603"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gae94e522f2c5235323e0c683077987603">NVSRAM_RET</a></div><div class="ttdeci">NVSRAM_RET</div><div class="ttdoc">NVSRAM返回值说明</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:49</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_gga355ea421de17e28d214226a54f220289a38b3296f4f63921b179e88efab58e8e0"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a38b3296f4f63921b179e88efab58e8e0">NVSRAM_BPL2</a></div><div class="ttdeci">@ NVSRAM_BPL2</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:40</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_gga355ea421de17e28d214226a54f220289a905582ca0f6566822fc53430a8b48a55"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289a905582ca0f6566822fc53430a8b48a55">NVSRAM_BPL3</a></div><div class="ttdeci">@ NVSRAM_BPL3</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:41</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_gga355ea421de17e28d214226a54f220289ad1ffca258ef5954a512c595974469e62"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289ad1ffca258ef5954a512c595974469e62">NVSRAM_BPL1</a></div><div class="ttdeci">@ NVSRAM_BPL1</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:39</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_gga355ea421de17e28d214226a54f220289afd756c9aa0ce536c5c528843607ae5db"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#gga355ea421de17e28d214226a54f220289afd756c9aa0ce536c5c528843607ae5db">NVSRAM_BPL0</a></div><div class="ttdeci">@ NVSRAM_BPL0</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:38</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_ggae94e522f2c5235323e0c683077987603a0dbe38fa460d712b300528141ef0e7c1"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603a0dbe38fa460d712b300528141ef0e7c1">NVSRAM_PRAM_ERRO</a></div><div class="ttdeci">@ NVSRAM_PRAM_ERRO</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:52</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_ggae94e522f2c5235323e0c683077987603a960f5ec077175cec77b21beec7eec742"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603a960f5ec077175cec77b21beec7eec742">NVSRAM_Busy</a></div><div class="ttdeci">@ NVSRAM_Busy</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:53</div></div>
+<div class="ttc" id="agroup___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3_html_ggae94e522f2c5235323e0c683077987603add501e163e5b2b4428e5ca1a1de694ec"><div class="ttname"><a href="group___n_v_s_r_a_m_xE5_xA4_x96_xE9_x83_xA8_xE6_x9E_x9A_xE4_xB8_xBE_xE4_xB8_x8E_xE7_xBB_x93_xE6_853622925b3b0431a0d994130f1cbec3.html#ggae94e522f2c5235323e0c683077987603add501e163e5b2b4428e5ca1a1de694ec">NVSRAM_SUCCEED</a></div><div class="ttdeci">@ NVSRAM_SUCCEED</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:51</div></div>
+<div class="ttc" id="astruct_nvsram___struct__t_html"><div class="ttname"><a href="struct_nvsram___struct__t.html">Nvsram_Struct_t</a></div><div class="ttdoc">NVSRAM结构体</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:61</div></div>
+<div class="ttc" id="astruct_nvsram___struct__t_html_a071e5007ca753b83d24505a6b6daba5c"><div class="ttname"><a href="struct_nvsram___struct__t.html#a071e5007ca753b83d24505a6b6daba5c">Nvsram_Struct_t::enabled</a></div><div class="ttdeci">uint8_t enabled</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:63</div></div>
+<div class="ttc" id="astruct_nvsram___struct__t_html_a2fd84723a16caafaa5ff489c8e7818b6"><div class="ttname"><a href="struct_nvsram___struct__t.html#a2fd84723a16caafaa5ff489c8e7818b6">Nvsram_Struct_t::snw</a></div><div class="ttdeci">uint8_t snw</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:65</div></div>
+<div class="ttc" id="astruct_nvsram___struct__t_html_abaabdc509cdaba7df9f56c6c76f3ae19"><div class="ttname"><a href="struct_nvsram___struct__t.html#abaabdc509cdaba7df9f56c6c76f3ae19">Nvsram_Struct_t::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:64</div></div>
+<div class="ttc" id="astruct_nvsram___struct__t_html_adc64ccb7538429fe78e3fe0139267370"><div class="ttname"><a href="struct_nvsram___struct__t.html#adc64ccb7538429fe78e3fe0139267370">Nvsram_Struct_t::error</a></div><div class="ttdeci">uint8_t error</div><div class="ttdef"><b>Definition:</b> Drv_Nvsram.h:62</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
