@@ -1,0 +1,92 @@
+\doxysection{NVSRAM静态函数}
+\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0}\index{NVSRAM静态函数@{NVSRAM静态函数}}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+check\+\_\+id} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 检测设备\+ID \end{DoxyCompactList}\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+get\+\_\+ready} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取就绪状态（上电等待） \end{DoxyCompactList}\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+get\+\_\+snw} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 序列号是否写入(上电检测) \end{DoxyCompactList}\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+verify\+\_\+set\+\_\+wen} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设置写使能 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{函数说明}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_gaec1cfb244df00836e9b13f76665f36c0}} 
+\index{NVSRAM静态函数@{NVSRAM静态函数}!nvsram\_check\_id@{nvsram\_check\_id}}
+\index{nvsram\_check\_id@{nvsram\_check\_id}!NVSRAM静态函数@{NVSRAM静态函数}}
+\doxysubsubsection{nvsram\_check\_id()}
+{\footnotesize\ttfamily static int8\+\_\+t nvsram\+\_\+check\+\_\+id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+NVSRAM 检测设备\+ID 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em 0\+:成功} & \\
+\hline
+{\em -\/1\+:失败} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_gadf2278f653b8b397d83ab94b89cbb8c0}} 
+\index{NVSRAM静态函数@{NVSRAM静态函数}!nvsram\_get\_ready@{nvsram\_get\_ready}}
+\index{nvsram\_get\_ready@{nvsram\_get\_ready}!NVSRAM静态函数@{NVSRAM静态函数}}
+\doxysubsubsection{nvsram\_get\_ready()}
+{\footnotesize\ttfamily static int8\+\_\+t nvsram\+\_\+get\+\_\+ready (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+NVSRAM 获取就绪状态（上电等待） 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em 0\+:成功} & \\
+\hline
+{\em -\/1\+:失败} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_ga50c377643f6cfab6c7eb93458d2b24dc}} 
+\index{NVSRAM静态函数@{NVSRAM静态函数}!nvsram\_get\_snw@{nvsram\_get\_snw}}
+\index{nvsram\_get\_snw@{nvsram\_get\_snw}!NVSRAM静态函数@{NVSRAM静态函数}}
+\doxysubsubsection{nvsram\_get\_snw()}
+{\footnotesize\ttfamily static int8\+\_\+t nvsram\+\_\+get\+\_\+snw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+NVSRAM 序列号是否写入(上电检测) 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em 0\+:成功} & \\
+\hline
+{\em -\/1\+:失败} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_gaa54d95910df0242dbd0004d9b6c35aee}} 
+\index{NVSRAM静态函数@{NVSRAM静态函数}!nvsram\_verify\_set\_wen@{nvsram\_verify\_set\_wen}}
+\index{nvsram\_verify\_set\_wen@{nvsram\_verify\_set\_wen}!NVSRAM静态函数@{NVSRAM静态函数}}
+\doxysubsubsection{nvsram\_verify\_set\_wen()}
+{\footnotesize\ttfamily static int8\+\_\+t nvsram\+\_\+verify\+\_\+set\+\_\+wen (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+NVSRAM 设置写使能 
+
+\begin{DoxyNote}{注解}
+每次写操作之前都要调用 
+
+状态寄存器两个方面判断 \+: 设备就绪位为0 写使能位为1 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{返回值}
+{\em 0\+:成功} & \\
+\hline
+{\em -\/1\+:失败} & \\
+\hline
+\end{DoxyRetVals}

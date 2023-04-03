@@ -1,0 +1,228 @@
+\begin{theindex}
+
+  \item {\_nvsram}
+    \subitem {NVSRAM驱动}, 7
+  \item {\_nvsram\_rxbuf}
+    \subitem {NVSRAM驱动}, 7
+  \item {\_nvsram\_txbuf}
+    \subitem {NVSRAM驱动}, 8
+
+  \indexspace
+
+  \item {Drv\_Nvsram\_TSET}
+    \subitem {NVSRAM外部宏}, 9
+
+  \indexspace
+
+  \item {E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv\_Nvsram.c}, 27
+  \item {E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv\_Nvsram.h}, 29, 31
+  \item {enabled}
+    \subitem {Nvsram\_Struct\_t}, 25
+  \item {error}
+    \subitem {Nvsram\_Struct\_t}, 25
+
+  \indexspace
+
+  \item {id}
+    \subitem {Nvsram\_Struct\_t}, 25
+
+  \indexspace
+
+  \item {NVSRAM\_BPL}
+    \subitem {NVSRAM外部枚举与结构体类型}, 8
+  \item {NVSRAM\_BPL0}
+    \subitem {NVSRAM外部枚举与结构体类型}, 8
+  \item {NVSRAM\_BPL1}
+    \subitem {NVSRAM外部枚举与结构体类型}, 8
+  \item {NVSRAM\_BPL2}
+    \subitem {NVSRAM外部枚举与结构体类型}, 8
+  \item {NVSRAM\_BPL3}
+    \subitem {NVSRAM外部枚举与结构体类型}, 8
+  \item {NVSRAM\_BUF\_SIZE}
+    \subitem {NVSRAM设备参数}, 18
+  \item {Nvsram\_Burst\_Read\_Buff}
+    \subitem {NVSRAM外部函数}, 10
+  \item {Nvsram\_Burst\_Write\_Buff}
+    \subitem {NVSRAM外部函数}, 11
+  \item {NVSRAM\_Busy}
+    \subitem {NVSRAM外部枚举与结构体类型}, 9
+  \item {nvsram\_check\_id}
+    \subitem {NVSRAM静态函数}, 22
+  \item {Nvsram\_Delay\_Ms}
+    \subitem {NVSRAM静态函数宏}, 16
+  \item {NVSRAM\_DEV\_ID}
+    \subitem {NVSRAM设备参数}, 18
+  \item {Nvsram\_Get\_Bp}
+    \subitem {NVSRAM外部函数}, 11
+  \item {nvsram\_get\_ready}
+    \subitem {NVSRAM静态函数}, 22
+  \item {Nvsram\_Get\_SN}
+    \subitem {NVSRAM外部函数}, 12
+  \item {nvsram\_get\_snw}
+    \subitem {NVSRAM静态函数}, 22
+  \item {Nvsram\_Get\_Struct}
+    \subitem {NVSRAM外部函数}, 12
+  \item {Nvsram\_Get\_tick}
+    \subitem {NVSRAM静态函数宏}, 16
+  \item {Nvsram\_Init}
+    \subitem {NVSRAM外部函数}, 12
+  \item {NVSRAM\_MAX\_ADDR}
+    \subitem {NVSRAM设备参数}, 18
+  \item {NVSRAM\_PRAM\_ERRO}
+    \subitem {NVSRAM外部枚举与结构体类型}, 9
+  \item {NVSRAM\_RET}
+    \subitem {NVSRAM外部枚举与结构体类型}, 9
+  \item {Nvsram\_Set\_Bp}
+    \subitem {NVSRAM外部函数}, 13
+  \item {Nvsram\_Set\_SN}
+    \subitem {NVSRAM外部函数}, 13
+  \item {Nvsram\_Soft\_Recall}
+    \subitem {NVSRAM外部函数}, 14
+  \item {Nvsram\_Soft\_Store}
+    \subitem {NVSRAM外部函数}, 14
+  \item {NVSRAM\_SPEC\_FRDID}
+    \subitem {NVSRAM设备参数}, 18
+  \item {NVSRAM\_SPEC\_FRDSN}
+    \subitem {NVSRAM设备参数}, 18
+  \item {NVSRAM\_SPEC\_NV\_ASDISB}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_NV\_ASENB}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_NV\_RECALL}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_NV\_STORE}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_RDID}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_RDSN}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_SLEEP}
+    \subitem {NVSRAM设备参数}, 19
+  \item {NVSRAM\_SPEC\_WRSN}
+    \subitem {NVSRAM设备参数}, 19
+  \item {Nvsram\_Spi\_TR}
+    \subitem {NVSRAM静态函数宏}, 17
+  \item {NVSRAM\_SRAM\_FREAD}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_SRAM\_READ}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_SRAM\_WRITE}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_STATUS\_BP0}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_STATUS\_BP1}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_STATUS\_FRDSR}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_STATUS\_RDSR}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_STATUS\_RDY}
+    \subitem {NVSRAM设备参数}, 20
+  \item {NVSRAM\_STATUS\_SNL}
+    \subitem {NVSRAM设备参数}, 21
+  \item {NVSRAM\_STATUS\_WEN}
+    \subitem {NVSRAM设备参数}, 21
+  \item {NVSRAM\_STATUS\_WPEN}
+    \subitem {NVSRAM设备参数}, 21
+  \item {NVSRAM\_STATUS\_WRDI}
+    \subitem {NVSRAM设备参数}, 21
+  \item {NVSRAM\_STATUS\_WREN}
+    \subitem {NVSRAM设备参数}, 21
+  \item {NVSRAM\_STATUS\_WRSR}
+    \subitem {NVSRAM设备参数}, 21
+  \item {Nvsram\_Struct\_t}, 25
+    \subitem {enabled}, 25
+    \subitem {error}, 25
+    \subitem {id}, 25
+    \subitem {snw}, 26
+  \item {NVSRAM\_SUCCEED}
+    \subitem {NVSRAM外部枚举与结构体类型}, 9
+  \item {Nvsram\_Test}
+    \subitem {NVSRAM外部函数}, 15
+  \item {nvsram\_verify\_set\_wen}
+    \subitem {NVSRAM静态函数}, 23
+  \item {NVSRAM外部函数}, 9
+    \subitem {Nvsram\_Burst\_Read\_Buff}, 10
+    \subitem {Nvsram\_Burst\_Write\_Buff}, 11
+    \subitem {Nvsram\_Get\_Bp}, 11
+    \subitem {Nvsram\_Get\_SN}, 12
+    \subitem {Nvsram\_Get\_Struct}, 12
+    \subitem {Nvsram\_Init}, 12
+    \subitem {Nvsram\_Set\_Bp}, 13
+    \subitem {Nvsram\_Set\_SN}, 13
+    \subitem {Nvsram\_Soft\_Recall}, 14
+    \subitem {Nvsram\_Soft\_Store}, 14
+    \subitem {Nvsram\_Test}, 15
+    \subitem {test\_rx}, 15
+    \subitem {test\_tx}, 15
+  \item {NVSRAM外部宏}, 9
+    \subitem {Drv\_Nvsram\_TSET}, 9
+  \item {NVSRAM外部枚举与结构体类型}, 8
+    \subitem {NVSRAM\_BPL}, 8
+    \subitem {NVSRAM\_BPL0}, 8
+    \subitem {NVSRAM\_BPL1}, 8
+    \subitem {NVSRAM\_BPL2}, 8
+    \subitem {NVSRAM\_BPL3}, 8
+    \subitem {NVSRAM\_Busy}, 9
+    \subitem {NVSRAM\_PRAM\_ERRO}, 9
+    \subitem {NVSRAM\_RET}, 9
+    \subitem {NVSRAM\_SUCCEED}, 9
+  \item {NVSRAM设备参数}, 17
+    \subitem {NVSRAM\_BUF\_SIZE}, 18
+    \subitem {NVSRAM\_DEV\_ID}, 18
+    \subitem {NVSRAM\_MAX\_ADDR}, 18
+    \subitem {NVSRAM\_SPEC\_FRDID}, 18
+    \subitem {NVSRAM\_SPEC\_FRDSN}, 18
+    \subitem {NVSRAM\_SPEC\_NV\_ASDISB}, 19
+    \subitem {NVSRAM\_SPEC\_NV\_ASENB}, 19
+    \subitem {NVSRAM\_SPEC\_NV\_RECALL}, 19
+    \subitem {NVSRAM\_SPEC\_NV\_STORE}, 19
+    \subitem {NVSRAM\_SPEC\_RDID}, 19
+    \subitem {NVSRAM\_SPEC\_RDSN}, 19
+    \subitem {NVSRAM\_SPEC\_SLEEP}, 19
+    \subitem {NVSRAM\_SPEC\_WRSN}, 19
+    \subitem {NVSRAM\_SRAM\_FREAD}, 20
+    \subitem {NVSRAM\_SRAM\_READ}, 20
+    \subitem {NVSRAM\_SRAM\_WRITE}, 20
+    \subitem {NVSRAM\_STATUS\_BP0}, 20
+    \subitem {NVSRAM\_STATUS\_BP1}, 20
+    \subitem {NVSRAM\_STATUS\_FRDSR}, 20
+    \subitem {NVSRAM\_STATUS\_RDSR}, 20
+    \subitem {NVSRAM\_STATUS\_RDY}, 20
+    \subitem {NVSRAM\_STATUS\_SNL}, 21
+    \subitem {NVSRAM\_STATUS\_WEN}, 21
+    \subitem {NVSRAM\_STATUS\_WPEN}, 21
+    \subitem {NVSRAM\_STATUS\_WRDI}, 21
+    \subitem {NVSRAM\_STATUS\_WREN}, 21
+    \subitem {NVSRAM\_STATUS\_WRSR}, 21
+  \item {NVSRAM静态函数}, 22
+    \subitem {nvsram\_check\_id}, 22
+    \subitem {nvsram\_get\_ready}, 22
+    \subitem {nvsram\_get\_snw}, 22
+    \subitem {nvsram\_verify\_set\_wen}, 23
+  \item {NVSRAM静态函数宏}, 16
+    \subitem {Nvsram\_Delay\_Ms}, 16
+    \subitem {Nvsram\_Get\_tick}, 16
+    \subitem {Nvsram\_Spi\_TR}, 17
+  \item {NVSRAM驱动}, 7
+    \subitem {\_nvsram}, 7
+    \subitem {\_nvsram\_rxbuf}, 7
+    \subitem {\_nvsram\_txbuf}, 8
+
+  \indexspace
+
+  \item {snw}
+    \subitem {Nvsram\_Struct\_t}, 26
+
+  \indexspace
+
+  \item {test\_rx}
+    \subitem {NVSRAM外部函数}, 15
+  \item {test\_tx}
+    \subitem {NVSRAM外部函数}, 15
+
+  \indexspace
+
+  \item {设备驱动}, 16
+
+\end{theindex}

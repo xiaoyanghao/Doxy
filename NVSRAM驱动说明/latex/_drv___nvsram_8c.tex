@@ -1,0 +1,168 @@
+\doxysection{E\+:/\+STM32\+SVN/\+Doxy实验/\+NVSRAM驱动/\+Drv\+\_\+\+Nvsram.c 文件参考}
+\label{_drv___nvsram_8c}\index{E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv\_Nvsram.c@{E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv\_Nvsram.c}}
+
+
+非易失性\+RAM驱动.  
+
+
+{\ttfamily \#include \char`\"{}Drv\+\_\+\+Nvsram.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Drv\+\_\+\+Spi.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ Nvsram\+\_\+\+Delay\+\_\+\+Ms}(NMS)~HAL\+\_\+\+Delay(NMS)
+\begin{DoxyCompactList}\small\item\em NVSRAM 毫秒延时. \end{DoxyCompactList}\item 
+\#define \textbf{ Nvsram\+\_\+\+Get\+\_\+tick}()~HAL\+\_\+\+Get\+Tick()
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取系统时间戳. \end{DoxyCompactList}\item 
+\#define \textbf{ Nvsram\+\_\+\+Spi\+\_\+\+TR}(txbuf,  rxbuf,  len)~SPI\+\_\+\+Transmit\+Receive(SPI\+\_\+\+CH1, txbuf, rxbuf, len)
+\begin{DoxyCompactList}\small\item\em NVSRAM SPI通信接口 \end{DoxyCompactList}\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+RDSR}~0x05
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+FRDSR}~0x0A
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+WRSR}~0x01
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+WREN}~0x06
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+WRDI}~0x04
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SRAM\+\_\+\+READ}~0x03
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SRAM\+\_\+\+FREAD}~0x0B
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SRAM\+\_\+\+WRITE}~0x02
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+NV\+\_\+\+STORE}~0x3C
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+NV\+\_\+\+RECALL}~0x60
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+NV\+\_\+\+ASENB}~0x59
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+NV\+\_\+\+ASDISB}~0x19
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+SLEEP}~0x\+B9
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+WRSN}~0x\+C2
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+RDSN}~0x\+C3
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+FRDSN}~0x\+C9
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+RDID}~0x9F
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+SPEC\+\_\+\+FRDID}~0x99
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+RDY}~0x01
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+WEN}~0x02
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+BP0}~0x04
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+BP1}~0x08
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+SNL}~0x40
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+STATUS\+\_\+\+WPEN}~0x80
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+DEV\+\_\+\+ID}~0x06818820
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+MAX\+\_\+\+ADDR}~0x1\+FFFF
+\item 
+\#define \textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}~256
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+check\+\_\+id} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 检测设备\+ID \end{DoxyCompactList}\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+get\+\_\+ready} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取就绪状态（上电等待） \end{DoxyCompactList}\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+get\+\_\+snw} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 序列号是否写入(上电检测) \end{DoxyCompactList}\item 
+static int8\+\_\+t \textbf{ nvsram\+\_\+verify\+\_\+set\+\_\+wen} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设置写使能 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Set\+\_\+\+Bp} (uint8\+\_\+t Level)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设置写保护. \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Get\+\_\+\+Bp} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取写保护块. \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ Nvsram\+\_\+\+Burst\+\_\+\+Write\+\_\+\+Buff} (uint32\+\_\+t nvsram\+\_\+addr, uint8\+\_\+t $\ast$w\+\_\+buf, uint32\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em NVSRAM 写内存函数 \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ Nvsram\+\_\+\+Burst\+\_\+\+Read\+\_\+\+Buff} (uint32\+\_\+t nvsram\+\_\+addr, uint8\+\_\+t $\ast$r\+\_\+buf, uint32\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em NVSRAM 读内存函数 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Soft\+\_\+\+Store} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 软件存储 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Soft\+\_\+\+Recall} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 软件加载数据 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Set\+\_\+\+SN} (uint8\+\_\+t $\ast$sn\+\_\+buff)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设置序列号 \end{DoxyCompactList}\item 
+void \textbf{ Nvsram\+\_\+\+Get\+\_\+\+SN} (uint8\+\_\+t $\ast$sn\+\_\+buff)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取序列号 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设备初始化 \end{DoxyCompactList}\item 
+void \textbf{ Nvsram\+\_\+\+Get\+\_\+\+Struct} (\textbf{ Nvsram\+\_\+\+Struct\+\_\+t} $\ast$nvsram\+\_\+st)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取设备状态 \end{DoxyCompactList}\item 
+void \textbf{ Nvsram\+\_\+\+Test} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 驱动测试 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ Nvsram\+\_\+\+Struct\+\_\+t} \textbf{ \+\_\+nvsram} = \{0\}
+\item 
+static uint8\+\_\+t \textbf{ \+\_\+nvsram\+\_\+txbuf} [\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}+4] = \{0\}
+\item 
+static uint8\+\_\+t \textbf{ \+\_\+nvsram\+\_\+rxbuf} [\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}+4] = \{0\}
+\item 
+uint8\+\_\+t \textbf{ test\+\_\+tx} [\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}] = \{0\}
+\item 
+uint8\+\_\+t \textbf{ test\+\_\+rx} [\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}] = \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+非易失性\+RAM驱动. 
+
+\begin{DoxyAuthor}{作者}
+YZH 
+\end{DoxyAuthor}
+\begin{DoxyVerb}  ==============================================================================
+                     ##### 芯片介绍 #####
+  ==============================================================================
+[..]
+   (+) 芯片型号   ： CY14B101Q2A-SXI
+   (+) 内存       ： 128K * 8 bit
+   (+) 地址       ： 0x00000-0x1FFFF
+   (+) 工作电压   ： 3V
+   (+) 工作温度   ：-40~85℃
+   (+) 设备ID     :  0x06818820
+   (+) 数据保存时间（环境温度85℃） ： 20年
+   (+) 通信方式  ： SPI 模式0或模式3
+   (+) 时钟频率  ： 正常读写 最高40MHZ  快读方式最高 104MHZ
+   (+) 写保护    ： 支持 1/4 1/2 1/1 0 内存保护
+   (+) 工作方式  ： 其内部有两个模块组成 SRAM （掉电丢失）和 量子陷阱（掉电保存）
+                   正常读写在SRAM中，掉电的过程中，外部连接电容剩余的电量，将SRAM
+                   中的数据保存到量子陷阱单元，实现掉电数据保护，上电之后，会自动
+                   将量子陷阱单元的数据搬运到SRAM中，实现上电加载，同时也可以利用
+                   软件命令实现数据保存。  \end{DoxyVerb}
+
+
+\begin{DoxyAttention}{注意}
+
+\begin{DoxyPre}
+         (+)  数据进行突发写操作时，当突发写到达一个受保护的块地址时，它将地址增
+              量继续到受保护空间，但是不向受保护内存写入任何数据。如果地址滚转将
+              突发写操作带到未受保护的空间，然后恢复写入。
+         (+)  数据进行突发写操作或者读操作时，如果地址大于0x1FFFF，地址将自动
+              在0x00000处依次增加写入或者读取；
+         (+)  在进行写内存，写寄存器，或者保存，加载、自动保存使能，自动保存不使
+               能操作之后，写使能将被禁止，同时状态寄存中WEN bit为0，下一次进行写
+               操作时必须将开启写使能。
+         (+)  芯片内部有8个字节的序列号空间，但只能被写一次（保存到量子陷阱之后），
+              写一次之后，状态寄存器中SNL bit 为1，并且永远不能擦除该标志位，序列号
+              永远不能再被更改。
+         (+)  提高设备驱动读写速率有两个方法 ：提高SPI通信速率
+                                               增大NVSRAM\_BUF\_SIZE缓存区
+    \end{DoxyPre}
+ 
+\end{DoxyAttention}

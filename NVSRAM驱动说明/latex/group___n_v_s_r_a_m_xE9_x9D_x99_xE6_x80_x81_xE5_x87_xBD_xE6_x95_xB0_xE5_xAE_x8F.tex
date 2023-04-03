@@ -1,0 +1,73 @@
+\doxysection{NVSRAM静态函数宏}
+\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F}\index{NVSRAM静态函数宏@{NVSRAM静态函数宏}}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ Nvsram\+\_\+\+Delay\+\_\+\+Ms}(NMS)~HAL\+\_\+\+Delay(NMS)
+\begin{DoxyCompactList}\small\item\em NVSRAM 毫秒延时. \end{DoxyCompactList}\item 
+\#define \textbf{ Nvsram\+\_\+\+Get\+\_\+tick}()~HAL\+\_\+\+Get\+Tick()
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取系统时间戳. \end{DoxyCompactList}\item 
+\#define \textbf{ Nvsram\+\_\+\+Spi\+\_\+\+TR}(txbuf,  rxbuf,  len)~SPI\+\_\+\+Transmit\+Receive(SPI\+\_\+\+CH1, txbuf, rxbuf, len)
+\begin{DoxyCompactList}\small\item\em NVSRAM SPI通信接口 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F_ga9a6ae053b9f2555afa5e67ca8427070a}} 
+\index{NVSRAM静态函数宏@{NVSRAM静态函数宏}!Nvsram\_Delay\_Ms@{Nvsram\_Delay\_Ms}}
+\index{Nvsram\_Delay\_Ms@{Nvsram\_Delay\_Ms}!NVSRAM静态函数宏@{NVSRAM静态函数宏}}
+\doxysubsubsection{Nvsram\_Delay\_Ms}
+{\footnotesize\ttfamily \#define Nvsram\+\_\+\+Delay\+\_\+\+Ms(\begin{DoxyParamCaption}\item[{}]{NMS }\end{DoxyParamCaption})~HAL\+\_\+\+Delay(NMS)}
+
+
+
+NVSRAM 毫秒延时. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em MS} & 延时 N ms \\
+\hline
+\end{DoxyParams}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F_ga2e8ad2fd2cf956872f15290e35c96e71}} 
+\index{NVSRAM静态函数宏@{NVSRAM静态函数宏}!Nvsram\_Get\_tick@{Nvsram\_Get\_tick}}
+\index{Nvsram\_Get\_tick@{Nvsram\_Get\_tick}!NVSRAM静态函数宏@{NVSRAM静态函数宏}}
+\doxysubsubsection{Nvsram\_Get\_tick}
+{\footnotesize\ttfamily \#define Nvsram\+\_\+\+Get\+\_\+tick(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~HAL\+\_\+\+Get\+Tick()}
+
+
+
+NVSRAM 获取系统时间戳. 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em 系统时间戳} & 毫秒 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\label{group___n_v_s_r_a_m_xE9_x9D_x99_xE6_x80_x81_xE5_x87_xBD_xE6_x95_xB0_xE5_xAE_x8F_gae7abb2a519cf15059878db72b60e37d1}} 
+\index{NVSRAM静态函数宏@{NVSRAM静态函数宏}!Nvsram\_Spi\_TR@{Nvsram\_Spi\_TR}}
+\index{Nvsram\_Spi\_TR@{Nvsram\_Spi\_TR}!NVSRAM静态函数宏@{NVSRAM静态函数宏}}
+\doxysubsubsection{Nvsram\_Spi\_TR}
+{\footnotesize\ttfamily \#define Nvsram\+\_\+\+Spi\+\_\+\+TR(\begin{DoxyParamCaption}\item[{}]{txbuf,  }\item[{}]{rxbuf,  }\item[{}]{len }\end{DoxyParamCaption})~SPI\+\_\+\+Transmit\+Receive(SPI\+\_\+\+CH1, txbuf, rxbuf, len)}
+
+
+
+NVSRAM SPI通信接口 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em txbuf} & 发送缓存区地址 \\
+\hline
+\mbox{\texttt{ out}}  & {\em rxbuf} & 接收缓存区地址 \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & 发送字节数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em RET\+\_\+\+OK：成功} & ; \\
+\hline
+{\em RET\+\_\+\+ERR\+:失败} & \\
+\hline
+\end{DoxyRetVals}

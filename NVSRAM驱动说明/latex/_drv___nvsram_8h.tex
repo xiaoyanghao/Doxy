@@ -1,0 +1,66 @@
+\doxysection{E\+:/\+STM32\+SVN/\+Doxy实验/\+NVSRAM驱动/\+Drv\+\_\+\+Nvsram.h 文件参考}
+\label{_drv___nvsram_8h}\index{E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv\_Nvsram.h@{E:/STM32SVN/Doxy实验/NVSRAM驱动/Drv\_Nvsram.h}}
+
+
+非易失性\+RAM驱动.  
+
+
+{\ttfamily \#include \char`\"{}stm32h7xx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Data\+\_\+\+Type.\+h\char`\"{}}\newline
+\doxysubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Nvsram\+\_\+\+Struct\+\_\+t}
+\begin{DoxyCompactList}\small\item\em NVSRAM结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ Drv\+\_\+\+Nvsram\+\_\+\+TSET}
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ NVSRAM\+\_\+\+BPL} \{ \textbf{ NVSRAM\+\_\+\+BPL0} = 0x00
+, \textbf{ NVSRAM\+\_\+\+BPL1}
+, \textbf{ NVSRAM\+\_\+\+BPL2}
+, \textbf{ NVSRAM\+\_\+\+BPL3}
+ \}
+\begin{DoxyCompactList}\small\item\em 内存写保护等级 \end{DoxyCompactList}\item 
+enum \textbf{ NVSRAM\+\_\+\+RET} \{ \textbf{ NVSRAM\+\_\+\+SUCCEED}
+, \textbf{ NVSRAM\+\_\+\+PRAM\+\_\+\+ERRO}
+, \textbf{ NVSRAM\+\_\+\+Busy}
+ \}
+\begin{DoxyCompactList}\small\item\em NVSRAM返回值说明 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设备初始化 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Set\+\_\+\+Bp} (uint8\+\_\+t Level)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设置写保护. \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Get\+\_\+\+Bp} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取写保护块. \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ Nvsram\+\_\+\+Burst\+\_\+\+Write\+\_\+\+Buff} (uint32\+\_\+t nvsram\+\_\+addr, uint8\+\_\+t $\ast$w\+\_\+buf, uint32\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em NVSRAM 写内存函数 \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ Nvsram\+\_\+\+Burst\+\_\+\+Read\+\_\+\+Buff} (uint32\+\_\+t nvsram\+\_\+addr, uint8\+\_\+t $\ast$r\+\_\+buf, uint32\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em NVSRAM 读内存函数 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Soft\+\_\+\+Store} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 软件存储 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Soft\+\_\+\+Recall} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 软件加载数据 \end{DoxyCompactList}\item 
+uint8\+\_\+t \textbf{ Nvsram\+\_\+\+Set\+\_\+\+SN} (uint8\+\_\+t $\ast$sn\+\_\+buff)
+\begin{DoxyCompactList}\small\item\em NVSRAM 设置序列号 \end{DoxyCompactList}\item 
+void \textbf{ Nvsram\+\_\+\+Get\+\_\+\+SN} (uint8\+\_\+t $\ast$sn\+\_\+buff)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取序列号 \end{DoxyCompactList}\item 
+void \textbf{ Nvsram\+\_\+\+Get\+\_\+\+Struct} (\textbf{ Nvsram\+\_\+\+Struct\+\_\+t} $\ast$nvsram\+\_\+st)
+\begin{DoxyCompactList}\small\item\em NVSRAM 获取设备状态 \end{DoxyCompactList}\item 
+void \textbf{ Nvsram\+\_\+\+Test} (void)
+\begin{DoxyCompactList}\small\item\em NVSRAM 驱动测试 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+非易失性\+RAM驱动. 
+
+\begin{DoxyAuthor}{作者}
+YZH 
+\end{DoxyAuthor}

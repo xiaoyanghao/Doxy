@@ -1,0 +1,58 @@
+\doxysection{NVSRAM驱动}
+\label{group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8}\index{NVSRAM驱动@{NVSRAM驱动}}
+
+
+CY14\+B101\+Q2\+A-\/\+SXI.  
+
+
+\doxysubsection*{模块}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ NVSRAM外部枚举与结构体类型}
+\item 
+\textbf{ NVSRAM外部宏}
+\item 
+\textbf{ NVSRAM外部函数}
+\item 
+\textbf{ NVSRAM静态函数宏}
+\item 
+\textbf{ NVSRAM设备参数}
+\item 
+\textbf{ NVSRAM静态函数}
+\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ Nvsram\+\_\+\+Struct\+\_\+t} \textbf{ \+\_\+nvsram} = \{0\}
+\item 
+static uint8\+\_\+t \textbf{ \+\_\+nvsram\+\_\+txbuf} [\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}+4] = \{0\}
+\item 
+static uint8\+\_\+t \textbf{ \+\_\+nvsram\+\_\+rxbuf} [\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}+4] = \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+CY14\+B101\+Q2\+A-\/\+SXI. 
+
+
+
+\doxysubsection{变量说明}
+\mbox{\label{group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8_ga7d7c6557472c6baa0dd512293355a612}} 
+\index{NVSRAM驱动@{NVSRAM驱动}!\_nvsram@{\_nvsram}}
+\index{\_nvsram@{\_nvsram}!NVSRAM驱动@{NVSRAM驱动}}
+\doxysubsubsection{\_nvsram}
+{\footnotesize\ttfamily \textbf{ Nvsram\+\_\+\+Struct\+\_\+t} \+\_\+nvsram = \{0\}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\label{group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8_ga8ecfd870fb8057668a378d412a92a36d}} 
+\index{NVSRAM驱动@{NVSRAM驱动}!\_nvsram\_rxbuf@{\_nvsram\_rxbuf}}
+\index{\_nvsram\_rxbuf@{\_nvsram\_rxbuf}!NVSRAM驱动@{NVSRAM驱动}}
+\doxysubsubsection{\_nvsram\_rxbuf}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+nvsram\+\_\+rxbuf[\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}+4] = \{0\}\hspace{0.3cm}{\ttfamily [static]}}
+
+前4个字节 1个字节命令码+3个字节地址 \mbox{\label{group___n_v_s_r_a_m_xE9_xA9_xB1_xE5_x8A_xA8_ga4a60ac89198dbc7a76380d9578274787}} 
+\index{NVSRAM驱动@{NVSRAM驱动}!\_nvsram\_txbuf@{\_nvsram\_txbuf}}
+\index{\_nvsram\_txbuf@{\_nvsram\_txbuf}!NVSRAM驱动@{NVSRAM驱动}}
+\doxysubsubsection{\_nvsram\_txbuf}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+nvsram\+\_\+txbuf[\textbf{ NVSRAM\+\_\+\+BUF\+\_\+\+SIZE}+4] = \{0\}\hspace{0.3cm}{\ttfamily [static]}}
+
+前4个字节 1个字节命令码+3个字节地址 

@@ -1,0 +1,79 @@
+\doxysection{NVSRAM外部枚举与结构体类型}
+\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}
+\doxysubsection*{缁撴瀯浣搣
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Nvsram\+\_\+\+Struct\+\_\+t}
+\begin{DoxyCompactList}\small\item\em NVSRAM结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{鏋氫妇}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ NVSRAM\+\_\+\+BPL} \{ \textbf{ NVSRAM\+\_\+\+BPL0} = 0x00
+, \textbf{ NVSRAM\+\_\+\+BPL1}
+, \textbf{ NVSRAM\+\_\+\+BPL2}
+, \textbf{ NVSRAM\+\_\+\+BPL3}
+ \}
+\begin{DoxyCompactList}\small\item\em 内存写保护等级 \end{DoxyCompactList}\item 
+enum \textbf{ NVSRAM\+\_\+\+RET} \{ \textbf{ NVSRAM\+\_\+\+SUCCEED}
+, \textbf{ NVSRAM\+\_\+\+PRAM\+\_\+\+ERRO}
+, \textbf{ NVSRAM\+\_\+\+Busy}
+ \}
+\begin{DoxyCompactList}\small\item\em NVSRAM返回值说明 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{璇︾粏鎻忚堪}
+
+
+\doxysubsection{鏋氫妇绫诲瀷璇存槑}
+\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_ga355ea421de17e28d214226a54f220289}} 
+\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_BPL@{NVSRAM\_BPL}}
+\index{NVSRAM\_BPL@{NVSRAM\_BPL}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}
+\doxysubsubsection{NVSRAM\_BPL}
+{\footnotesize\ttfamily enum \textbf{ NVSRAM\+\_\+\+BPL}}
+
+
+
+内存写保护等级 
+
+\begin{DoxyEnumFields}{鏋氫妇鍊紏
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_BPL0@{NVSRAM\_BPL0}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_BPL0@{NVSRAM\_BPL0}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_gga355ea421de17e28d214226a54f220289afd756c9aa0ce536c5c528843607ae5db}} 
+NVSRAM\+\_\+\+BPL0&内存不保护 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_BPL1@{NVSRAM\_BPL1}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_BPL1@{NVSRAM\_BPL1}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_gga355ea421de17e28d214226a54f220289ad1ffca258ef5954a512c595974469e62}} 
+NVSRAM\+\_\+\+BPL1&内存保护 0x18000╘+C0x1\+FFFF \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_BPL2@{NVSRAM\_BPL2}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_BPL2@{NVSRAM\_BPL2}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_gga355ea421de17e28d214226a54f220289a38b3296f4f63921b179e88efab58e8e0}} 
+NVSRAM\+\_\+\+BPL2&内存保护 0x10000╘+C0x1\+FFFF \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_BPL3@{NVSRAM\_BPL3}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_BPL3@{NVSRAM\_BPL3}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_gga355ea421de17e28d214226a54f220289a905582ca0f6566822fc53430a8b48a55}} 
+NVSRAM\+\_\+\+BPL3&内存保护 0x00000╘+C0x1\+FFFF \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_gae94e522f2c5235323e0c683077987603}} 
+\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_RET@{NVSRAM\_RET}}
+\index{NVSRAM\_RET@{NVSRAM\_RET}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}
+\doxysubsubsection{NVSRAM\_RET}
+{\footnotesize\ttfamily enum \textbf{ NVSRAM\+\_\+\+RET}}
+
+
+
+NVSRAM返回值说明 
+
+\begin{DoxyEnumFields}{鏋氫妇鍊紏
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_SUCCEED@{NVSRAM\_SUCCEED}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_SUCCEED@{NVSRAM\_SUCCEED}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_ggae94e522f2c5235323e0c683077987603add501e163e5b2b4428e5ca1a1de694ec}} 
+NVSRAM\+\_\+\+SUCCEED&成功 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_PRAM\_ERRO@{NVSRAM\_PRAM\_ERRO}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_PRAM\_ERRO@{NVSRAM\_PRAM\_ERRO}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_ggae94e522f2c5235323e0c683077987603a0dbe38fa460d712b300528141ef0e7c1}} 
+NVSRAM\+\_\+\+PRAM\+\_\+\+ERRO&传入参数错误 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NVSRAM\_Busy@{NVSRAM\_Busy}!NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}}\index{NVSRAM外部枚举与结构体类型@{NVSRAM外部枚举与结构体类型}!NVSRAM\_Busy@{NVSRAM\_Busy}}}\mbox{\label{group___n_v_s_r_a_m_xCD_xE2_xB2_xBF_xC3_xB6_xBE_xD9_xD3_xEB_xBD_xE1_xB9_xB9_xCC_xE5_xC0_xE0_xD0_xCD_ggae94e522f2c5235323e0c683077987603a960f5ec077175cec77b21beec7eec742}} 
+NVSRAM\+\_\+\+Busy&设备忙 \\
+\hline
+
+\end{DoxyEnumFields}
